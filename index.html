@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Content</title>
+    <style>
+        /* Basic tab styles (customize as needed) */
+        .tab {
+            display: none;
+        }
+
+        .tab-label {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #007bff; /* Change this color to match your desired theme */
+            color: #fff; /* Text color */
+            border: 1px solid #007bff; /* Border color */
+            border-radius: 5px;
+        }
+
+        .tab-label:hover {
+            background-color: #0056b3; /* Change this color for the hover effect */
+        }
+
+        /* Show the first tab by default */
+        .tab:first-child {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-label">About Our Audience</div>
+    <div class="tab-label">Tab 2</div>
+    <div class="tab-label">Tab 3</div>
+
+    <div class="tab">
+        <h2>About Our Audience</h2>
+        <p>This is the content of the first tab.</p>
+    </div>
+    <div class="tab">
+        <h2>Tab 2</h2>
+        <p>This is the content of the second tab.</p>
+    </div>
+    <div class="tab">
+        <h2>Tab 3</h2>
+        <p>This is the content of the third tab.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle tab switching
+        const tabLabels = document.querySelectorAll('.tab-label');
+        const tabs = document.querySelectorAll('.tab');
+
+        tabLabels.forEach((label, index) => {
+            label.addEventListener('click', () => {
+                // Hide all tabs
+                tabs.forEach(tab => {
+                    tab.style.display = 'none';
+                });
+
+                // Show the clicked tab
+                tabs[index].style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
