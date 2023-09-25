@@ -31,10 +31,12 @@
         display: inline-block; /* Display tabs side-by-side */
         margin-right: 10px; /* Add some spacing between tabs */
     }
-    .tab-label hr {
-            margin-top: 5px; /* Adjust the margin as needed */
-            border: none;
-            border-top: 1px solid #423f4a; /* Line color (matches tab background) */
+    .tab-label::after {
+    content: "";
+    display: block;
+    height: 1px; /* Height of the separator line */
+    background-color: #cccccc; /* Color of the separator line */
+    margin-top: 5px; /* Adjust the margin as needed */
     }
     .tab-label:hover {
         background-color: #3a3645; /* Change this color for the hover effect */
