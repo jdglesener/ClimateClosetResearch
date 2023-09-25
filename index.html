@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabbed Content</title>
+    <title>Climate Closet Research</title>
     <style>
-        /* Basic tab styles (customize as needed) */
-        .tab {
-            display: none;
-        }
+    /* Updated tab styles for a horizontal layout */
+    .tab-label {
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: #007bff; /* Change this color to match your desired theme */
+        color: #fff; /* Text color */
+        border: 1px solid #007bff; /* Border color */
+        border-radius: 5px;
+        display: inline-block; /* Display tabs side-by-side */
+        margin-right: 10px; /* Add some spacing between tabs */
+    }
 
-        .tab-label {
-            cursor: pointer;
-            padding: 10px 20px;
-            background-color: #007bff; /* Change this color to match your desired theme */
-            color: #fff; /* Text color */
-            border: 1px solid #007bff; /* Border color */
-            border-radius: 5px;
-        }
+    .tab-label:hover {
+        background-color: #0056b3; /* Change this color for the hover effect */
+    }
 
-        .tab-label:hover {
-            background-color: #0056b3; /* Change this color for the hover effect */
-        }
-
-        /* Show the first tab by default */
-        .tab:first-child {
-            display: block;
-        }
+    /* Show the first tab by default */
+    .tab:first-child {
+        display: block;
+    }
     </style>
 </head>
 <body>
