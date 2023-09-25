@@ -7,14 +7,19 @@
     <style>
     body {
         background-color: #b0aabf; /* Change this color to your desired background color */
-        margin: 0; /* Remove default body margin */
-        padding: 0; /* Remove default body padding */
+        margin: 5; /* Remove default body margin */
+        padding: 5; /* Remove default body padding */
     }
     /* Updated tab styles for a horizontal layout */
     header {
         font-size: 56px;
         font-weight: bold;
         text-align: center;
+    }
+    header hr {
+            margin-top: 5px; /* Adjust the margin as needed */
+            border: none;
+            border-top: 1px solid #fff; /* Line color (white) */
     }
     .tab-label {
         cursor: pointer;
@@ -26,7 +31,11 @@
         display: inline-block; /* Display tabs side-by-side */
         margin-right: 10px; /* Add some spacing between tabs */
     }
-
+    .tab-label hr {
+            margin-top: 5px; /* Adjust the margin as needed */
+            border: none;
+            border-top: 1px solid #007bff; /* Line color (matches tab background) */
+    }
     .tab-label:hover {
         background-color: #3a3645; /* Change this color for the hover effect */
     }
